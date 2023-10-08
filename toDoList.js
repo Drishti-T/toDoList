@@ -63,6 +63,7 @@ whichTasks.forEach(task => {
 window.addEventListener('resize', () => {
     windowWidth = window.innerWidth;
     console.log(windowWidth);
+    console.log("hello");
 
 
 
