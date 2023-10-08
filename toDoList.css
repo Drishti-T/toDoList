@@ -1,0 +1,404 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    background-color: rgb(50, 50, 50);
+    font-size: 16px;
+    color: white;
+    font-family: Arial, sans-serif;
+
+}
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+/* Track (background) of the scrollbar */
+::-webkit-scrollbar {
+    width: 15px;
+    /* Width of the scrollbar track */
+    /* background-color: rgba(255, 255, 255, 0); */
+    border-radius: 20px;
+    ;
+}
+
+/* Handle (thumb) of the scrollbar */
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    /* Color of the scrollbar thumb */
+    border-radius: 6px;
+    /* Rounded corners for the thumb */
+    border: 2px solid white;
+}
+
+
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-1 {
+    width: 100%;
+    padding: 15px;
+    /* background-color: aliceblue; */
+
+}
+
+.section {
+
+    width: 100%;
+    padding: 15px 15px 15px 0;
+    /* background-color: red; */
+    display: none;
+
+
+}
+
+
+@media (min-width : 700px) and (max-width : 1000px){
+
+
+    .section-1 {
+
+        width: 25%;
+        display : none;
+    }
+
+    .section {
+        width: 100%;
+        display : block;
+
+    }
+
+}
+
+@media (min-width : 1001px){
+
+    .section-1 {
+
+        width: 25%;
+        display : block;
+        
+    }
+    
+    .section {
+        width: 75%;
+        display : block;
+
+    }
+
+}
+
+
+
+#Important {
+
+
+    display: none;
+}
+
+
+.section {
+
+    display : none;
+}
+.active {
+
+    display : block;
+}
+@media (min-width : 700px) and (max-width : 1000px){
+
+
+    .section-1 {
+
+        width: 25%;
+        display : none;
+    }
+
+    .section {
+
+        display:none;
+    }
+
+    .section#allTaskMain {
+        width: 100%;
+        display : block;
+
+    }
+
+}
+
+@media (max-width: 699px){
+
+    .section {
+
+
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.taskInfo {
+
+    height: 100%;
+    background-color: rgb(210, 161, 184);
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container-1 {
+    /* width: 100%; */
+    height: 10%;
+    margin: 10px;
+    background-color: rgb(103, 103, 103);
+    border-radius: 30px;
+    border: 2px dashed white;
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    /* flex-wrap: wrap; */
+    
+}
+
+.profile {
+
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: rgba(255, 180, 211, 0.311);
+    margin: 10px;
+    padding: 2px;
+    
+}
+
+.user {
+
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height:100%;
+    /* background-color : red; */
+    padding:5px 15px;
+    /* align-items: center; */
+    justify-content: space-evenly;
+
+
+
+
+    
+}
+#name {
+
+
+    font-size : 0.9em;
+}
+#email-id { 
+
+    font-size : 0.7em;
+}
+ 
+
+
+img {
+
+    width: 100%;
+    height : 100%;
+    border-radius: 100px;
+}
+
+#name {
+
+    width: calc(100% - 90px);
+
+
+}
+
+
+
+
+#taskSpecificity {
+
+    height: 45%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    padding: 10px;
+    /* flex-wrap: inherit; */
+
+}
+
+.empty {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* background-color: rgba(0, 0, 255, 0.189); */
+    justify-content: space-evenly;
+
+}
+
+.whatTask {
+    height: 20%;
+    background-color: rgba(255, 180, 211, 0.137);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    /* padding: 5px; */
+    font-family: 'Nanum Pen Script','Arial';
+    font-size: 1.5em;
+
+}
+
+.whichTask {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    width: 100%;
+    /* background-color: red; */
+    
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    cursor: pointer;
+
+
+}
+
+.elements {
+
+    height: 40px;
+    width: 40px;
+    /* background-color: rgba(255, 255, 255, 0.413); */
+   
+    border-radius: 80px;
+    
+
+}
+
+#allTask {
+
+    width : calc(100% - 80px);
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+/* section-2 */
+
+
+
+.taskTab {
+
+    height: 100%;
+    border-radius: 30px;
+    background-color: rgb(103, 103, 103);
+    display: flex;
+    flex-direction: column;
+}
+
+.container-2 {
+    height: 20%;
+    margin: 10px;
+    background-color: rgb(210, 161, 184);
+    border-radius: 30px;
+    border: 2px dashed white;
+}
+
+
+.taskSpecificityTitle {
+
+
+    width : 100%;
+    height: 100%;
+    /* background-color: purple; */
+    display: flex;
+    flex-direction : column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size : 3em;
+    font-family: 'Nanum Pen Script','Arial';
+}
+
+#defineTitle {
+
+    font-size : 0.5em;
+}
+
+
+
+
+
+
+#writeTask {
+
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.type {
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(92, 92, 92, 0.416);
+    border-radius: 30px;
+    margin: 10px;
+    overflow: auto;
+
+
+
+}
+
+.scrollableContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* flex-wrap:wrap; */
+
+}
+
+
+/* input {
+    vertical-align: bottom;
+} */
+input.inputField {
+    height: 10%;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    /* border: 0 0 2px 0 solid white;  */
+
+    background-color: transparent;
+    margin: 10px 30px;
+    /* vertical-align: bottom; */
+    padding: 25px;
+    font-size: 2em;
+    /* border-radius: 50px; */
+    ;
+}
+
+
