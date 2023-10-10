@@ -49,8 +49,7 @@ whichTasks.forEach(task => {
 
             
 
-            alert("hello");
-            console.log("heyyy u clicked it", targetId);
+            
         }
 
     });
