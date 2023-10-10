@@ -67,3 +67,21 @@ window.addEventListener('resize', () => {
 
 
 });
+
+
+const addTask = document.getElementsByClassName('addTaskLogo')[0];
+const prompt = document.getElementsByClassName('prompt')[0];
+console.log(addTask);
+
+addTask.addEventListener('click', ()=>{
+
+    prompt.style.backgroundColor = 'red';
+      
+      
+});
+
+// window.addEventListener('click', ()=> {
+       
+//     prompt.style.display = 'none';
+
+// });
