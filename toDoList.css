@@ -5,7 +5,7 @@ body {
     background-color: rgb(50, 50, 50);
     font-size: 16px;
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: 'Nanum Pen Script','Arial';
 
 }
 
@@ -157,7 +157,7 @@ body {
 .taskInfo {
 
     height: 100%;
-    background-color: rgb(210, 161, 184);
+    background-color: #ffc0cb;
     border-radius: 30px;
 
     display: flex;
@@ -184,9 +184,11 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 30px;
-    background-color: rgba(255, 180, 211, 0.311);
+    background-color: rgba(66, 66, 66, 0.311);
     margin: 10px;
     padding: 2px;
+    font-family: Arial, sans-serif;
+
     
 }
 
@@ -262,7 +264,7 @@ img {
     display: flex;
     align-items: center;
     /* padding: 5px; */
-    font-family: 'Nanum Pen Script','Arial';
+    
     font-size: 1.5em;
 
 }
@@ -321,7 +323,7 @@ img {
         
     width: 80px;
     height: 80px;
-    background-color : rgb(237, 24, 24);
+    background-color : rgb(104, 101, 101);
     border-radius:80px;
     display:flex;
     flex-direction:column;
@@ -331,6 +333,8 @@ img {
     color:rgba(255, 255, 255, 0.571);
     cursor:pointer;
     border: 3px solid rgba(255, 255, 255, 0.703);
+    font-family: Arial, sans-serif;
+
     
 
 }
@@ -343,23 +347,82 @@ img {
 .prompt {
      position: absolute;
  
-     /* display:block; */
+     display:none;
 
-    width : 400px;
-    height: 400px;
-    background-color:white;
+    width : 100%;
+    height: 100vh;
+    /* background-color:white; */
+    
 }
+
+
+div.flex {
+    height:100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    /* flex-direction: column; */
+}
+ 
+
+
 
 .cross {
 
     /* z-index: 1; */
 
-    width : 100px;
-    height: 100px;
-    background-color:rgb(53, 11, 11);
+    width : 40%;
+    height: 50%;
+    background-color:rgba(93, 93, 93, 0.575);
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size : 2em;
+    justify-content: center;
+    border: 2px solid white;
+ 
+
+}
+
+
+.close {
+
+    width : 40px;
+    height: 40px;
+    background-color :blue;
+    position: relative;
+    top:-10%
 
 
 }
+
+.addNewTitle {
+
+
+    width : 60%;
+    height :20%;
+    background-color: #ffc0cb;
+    border-radius: 20px;
+    margin:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hr {
+    width : 80%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    outline: none; 
+    font-family: 'Nanum Pen Script','Arial';
+    font-size: 2rem;
+    
+}
+
 
 
 
@@ -380,7 +443,7 @@ img {
 .container-2 {
     height: 20%;
     margin: 10px;
-    background-color: rgb(210, 161, 184);
+    background-color: #ffc0cb;
     border-radius: 30px;
     border: 2px dashed white;
 }

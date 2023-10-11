@@ -76,13 +76,11 @@ console.log(addTask);
 
 addTask.addEventListener('click', ()=>{
 
-    prompt.style.backgroundColor = 'red';
-      
+prompt.style.display ='block';      
       
 });
 
-cross.addEventListener('click', ()=> {
+// cross.addEventListener('click', ()=> {
        
-    prompt.style.backgroundColor = 'pink';
-
-});
+//          prompt.style.display = 'none';
+// });
