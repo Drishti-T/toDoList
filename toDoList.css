@@ -370,9 +370,10 @@ div.flex {
 .cross {
 
     /* z-index: 1; */
-
-    width : 40%;
-    height: 50%;
+    width:400px;
+    max-width : 600px;
+    min-width:200px;
+    max-height: auto;
     background-color:rgba(93, 93, 93, 0.575);
     border-radius: 60px;
     display: flex;
@@ -392,7 +393,10 @@ div.flex {
     height: 40px;
     background-color :blue;
     position: relative;
-    top:-10%
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 
 }
