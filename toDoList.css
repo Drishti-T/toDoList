@@ -343,21 +343,24 @@ img {
 .prompt {
      position: absolute;
  
-     display:block;
+     /* display:block; */
 
-    width : 100px;
-    height: 100px;
+    width : 400px;
+    height: 400px;
     background-color:white;
 }
 
-/* .promptAddTask {
-    width: 30%;
-    height: 50%;
-        
+.cross {
 
-    background-color:pink;
-   
-} */
+    /* z-index: 1; */
+
+    width : 100px;
+    height: 100px;
+    background-color:rgb(53, 11, 11);
+
+
+}
+
 
 
 

@@ -71,6 +71,7 @@ window.addEventListener('resize', () => {
 
 const addTask = document.getElementsByClassName('addTaskLogo')[0];
 const prompt = document.getElementsByClassName('prompt')[0];
+const cross = document.getElementsByClassName('cross')[0];
 console.log(addTask);
 
 addTask.addEventListener('click', ()=>{
@@ -80,8 +81,8 @@ addTask.addEventListener('click', ()=>{
       
 });
 
-// window.addEventListener('click', ()=> {
+cross.addEventListener('click', ()=> {
        
-//     prompt.style.display = 'none';
+    prompt.style.backgroundColor = 'pink';
 
-// });
+});
