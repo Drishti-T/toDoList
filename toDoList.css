@@ -458,6 +458,8 @@ div.flex {
 
 }
 
+
+
 .innerBlock {
 
     width:100%;
@@ -474,6 +476,11 @@ div.flex {
     
 }
 
+.innerBlock:hover {
+    background-color: rgba(78, 78, 78, 0.635);
+
+
+}
 
 .addTaskLogo:hover {
     background-color: rgba(78, 78, 78, 0.635);
