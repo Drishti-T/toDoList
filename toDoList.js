@@ -51,13 +51,29 @@ whichTasks.forEach(task => {
 
             
         }
+        else if (windowWidth <=699){
+
+
+         const sectionOne = document.querySelector(".sectionOne");
+          sectionOne.classList.add('displayOff');
+        
+          const clickedButton = Event.currentTarget;
+          const button = clickedButton.getAttribute('data-target');
+
+          const Id = document.getElementById(button);
+          console.log(Id);
+          Id.classList.add('displayOn'); 
+
+
+
+
+
+        }
+
+
 
     });
-
 });
-
-
-
 
 window.addEventListener('resize', () => {
     windowWidth = window.innerWidth;
@@ -85,3 +101,25 @@ close.addEventListener('click', ()=> {
          prompt.style.display = 'none';
 
 });
+
+
+let addTaskLogo = document.querySelector(".addTaskLogo ");
+
+// addTaskLogo.addEventListener("mouseenter", () =>{
+
+//     addTaskLogo.style.backgroundColor = "rgba(78, 78, 78, 0.635)"
+// });
+
+
+addTaskLogo.addEventListener("mousedown", () =>{
+    addTaskLogo.style.transform = "scale(0.9)";
+
+
+});
+
+
+addTaskLogo.addEventListener("mouseup", () => {
+    console.log("bye");
+
+    addTaskLogo.style.transform = "scale(1)";
+})

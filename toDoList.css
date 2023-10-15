@@ -42,10 +42,9 @@ body {
     justify-content: space-between;
 }
 
-.section-1 {
+.sectionOne {
     width: 100%;
     padding: 15px;
-    /* background-color: aliceblue; */
 
 }
 
@@ -63,7 +62,7 @@ body {
 @media (min-width : 700px) and (max-width : 1000px){
 
 
-    .section-1 {
+    .sectionOne {
 
         width: 25%;
         display : none;
@@ -79,7 +78,7 @@ body {
 
 @media (min-width : 1001px){
 
-    .section-1 {
+    .sectionOne {
 
         width: 25%;
         display : block;
@@ -114,7 +113,7 @@ body {
 @media (min-width : 700px) and (max-width : 1000px){
 
 
-    .section-1 {
+    .sectionOne {
 
         width: 25%;
         display : none;
@@ -259,7 +258,7 @@ img {
 
 .whatTask {
     height: 20%;
-    background-color: rgba(255, 180, 211, 0.137);
+    background-color: rgba(241, 2, 102, 0.137);
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -320,29 +319,42 @@ img {
 }
 
 .addTaskLogo {
-        
+        /* content:attr(data-text); */
     width: 80px;
     height: 80px;
-    background-color : rgb(104, 101, 101);
+    background-color: rgba(112, 112, 112, 0.466);
+    /* background-color: rgba(78, 78, 78, 0.635); */
     border-radius:80px;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    font-size:2em;
-    color:rgba(255, 255, 255, 0.571);
+    font-size:4.5em;
+    color:rgba(255, 255, 255, 0.08);
+
     cursor:pointer;
     border: 3px solid rgba(255, 255, 255, 0.703);
     font-family: Arial, sans-serif;
-
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+     /* transition: transform 0.3s; */
     
 
 }
 
-.text {
-   font-size: 0.4em;
+.addTaskLogo:hover {
+    background-color: rgba(78, 78, 78, 0.635);
+
 
 }
+
+
+.text {
+   font-size: 1em;
+
+}
+
+
+
 
 .prompt {
      position: absolute;
@@ -352,6 +364,7 @@ img {
     width : 100%;
     height: 100vh;
     /* background-color:white; */
+
     
 }
 
@@ -379,7 +392,7 @@ div.flex {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size : 2em;
+    font-size : 1.5em;
     justify-content: center;
     border: 2px solid white;
  
@@ -425,6 +438,56 @@ div.flex {
     font-family: 'Nanum Pen Script','Arial';
     font-size: 2rem;
     
+}
+
+
+
+
+.backButton {
+
+    width: 70px;
+    height: 70px;
+    position: absolute; 
+    /* background-color: rgb(214, 27, 95); */
+    display:flex;
+    top: 85%;
+    left:15%;
+    justify-content:center;
+    align-items: center;
+
+
+}
+
+.innerBlock {
+
+    width:100%;
+    height:100%;
+    background-color: rgba(112, 112, 112, 0.466);
+    border-radius:50px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    color:rgb(255, 255, 255);
+    font-size: 3em;
+
+    border : 2px white solid;
+    
+}
+
+
+.addTaskLogo:hover {
+    background-color: rgba(78, 78, 78, 0.635);
+
+
+}
+@media (min-width: 700px){
+
+    .backButton {
+        display:none;
+    }
+
+
+
 }
 
 
@@ -502,28 +565,31 @@ div.flex {
     display: flex;
     flex-direction: column;
     height: 100%;
-    /* flex-wrap:wrap; */
 
 }
 
 
-/* input {
-    vertical-align: bottom;
-} */
+
 input.inputField {
     height: 10%;
     border: none;
     border-bottom: 2px solid white;
     outline: none;
-    /* border: 0 0 2px 0 solid white;  */
 
     background-color: transparent;
     margin: 10px 30px;
-    /* vertical-align: bottom; */
     padding: 25px;
     font-size: 2em;
-    /* border-radius: 50px; */
-    ;
+   
+    
 }
 
+.displayOff {
 
+    display: none;
+}
+
+.displayOn {
+
+    display: block;
+}
